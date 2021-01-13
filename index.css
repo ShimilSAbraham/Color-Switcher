@@ -1,0 +1,96 @@
+body{
+        margin:0;
+        padding:0;
+        background: #343434;
+        transition: 1s;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .head{
+          color: #0275d8;
+          margin-left: 40px;
+          font-weight: 500;
+          /* padding: 20px auto; */
+      }
+      .head h1{
+          transition: 0.5s;
+          font-size: 40px;
+          text-align: center;
+      }
+      @media screen and (min-width: 692px)
+      {
+          .head{margin: 0 auto;}
+        .head h1{font-size: 50px; } 
+      }
+      .center{
+        position:absolute;
+        top:20%;
+        left:50%;
+            transform: translate(-50%,-50%);
+    
+      }
+      .switch
+      {
+        position:relative;
+        width:80px;
+        height:40px;
+        margin: 20px 10px;
+        appearance:none;
+        outline:none;
+        border-radius:20px;
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+        transition: 0.5s;
+      }
+      @media screen and (max-width: 692px)
+      {
+          .center{flex-direction: column;}
+          .switch{transform: scale(0.7); margin: 10px 0;}
+      }
+      .switch{
+        background: #0275d8;
+      }
+    
+      .switch::before
+      {
+        content:'';
+        position:absolute;
+        width: 40px;
+        height:40px;
+        border-radius:20px;
+        top:0;
+        left:0;
+        background:#fff;
+        transform: scale(1.1);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        transition:0.5s;
+      }
+      
+      .switch:checked::before
+      {
+        left:40px;
+      }
+
+
+.image
+{
+    background-image:url('img/blue.png');
+    background-repeat: no-repeat;
+    background-size: 550px;
+    padding: 20%;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%,-20%);
+    transition: 1s all;
+}
+
+@media screen and (max-width:600px){
+    .image
+{
+    background-size: 250px;
+    margin: 10% auto;
+    padding: 30%;
+    width: 300px;
+    transform: translate(-28%,-50%);
+}
+}
