@@ -42,6 +42,6 @@ cool_switch.addEventListener("click",function(){
       document.querySelector("body").style.background = colors[j];
    cool_switch.style.background = bg;  document.querySelector(".head").style.color = bg;
    document.querySelector(".image").style.backgroundImage = "url('')";
-   document.querySelector(".image").style.transition = "all 0.5s";
+   document.querySelector(".image").style.transition = "0.5s ease";
     }
 });
