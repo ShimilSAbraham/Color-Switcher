@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body{
         margin:0;
         padding:0;
@@ -7,7 +10,7 @@ body{
       }
       .head{
           color: #0275d8;
-          margin-left: 40px;
+          margin: 0;
           font-weight: 500;
           /* padding: 20px auto; */
       }
@@ -15,9 +18,14 @@ body{
           transition: 0.5s;
           font-size: 40px;
           text-align: center;
+	  padding: 0;
       }
       @media screen and (min-width: 692px)
       {
+        body{
+          padding: 0;
+          margin: 0;
+          max-width:fit-content}
           .head{margin: 0 auto;}
         .head h1{font-size: 50px; } 
       }
@@ -42,7 +50,6 @@ body{
       }
       @media screen and (max-width: 692px)
       {
-          body{max-width: 340px;}
           .center{flex-direction: column;}
           .switch{transform: scale(0.7); margin: 20px 0;}
       }
@@ -81,7 +88,7 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-35%,-20%);
+    transform: translate(-45%,-20%); 
     transition: 1s all;
 }
 
@@ -92,6 +99,6 @@ body{
     margin: 10% auto;
     padding: 30%;
     width: 300px;
-    transform: translate(-25%,-50%);
+    transform: translate(-45%,-50%);
 }
 }
